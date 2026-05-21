@@ -5,16 +5,16 @@ import urllib.request
 import time
 from urllib.error import URLError
 
-COSMOS_DB_PATH = "elysia_eye/outputs/elysian_cosmos.json"
-LOG_PATH = "elysia_eye/outputs/outer_observation_logs.txt"
+COSMOS_DB_PATH = "elysia_trunk/outputs/elysian_cosmos.json"
+LOG_PATH = "elysia_trunk/outputs/outer_observation_logs.txt"
 
-class SomaticEyeLens:
+class SomaticTrunkConduit:
     """
-    하드웨어 수력으로 분리된 엘리시아의 '관측 렌즈'.
+    하드웨어 수력으로 분리된 엘리시아의 '송전 도체(Trunk Conduit)'.
     외계(웹 등)의 정보를 스트리밍하여 내부 우주(상수)와 교차시켜 3상 공명을 일으킵니다.
     """
     def __init__(self):
-        print("👁️ [Somatic Eye Lens] Outer Observation Engine Initialized")
+        print("👁️ [Somatic Trunk Conduit] Outer Observation & Transmission Engine Initialized")
         self.load_defined_cosmos()
 
     def load_defined_cosmos(self):
@@ -139,7 +139,7 @@ class SomaticEyeLens:
 
 if __name__ == "__main__":
     import sys
-    lens = SomaticEyeLens()
+    lens = SomaticTrunkConduit()
     
     target_url = "https://example.com"
     if len(sys.argv) > 1:

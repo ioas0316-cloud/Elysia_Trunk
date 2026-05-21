@@ -3,8 +3,8 @@ import numpy as np
 import os
 import json
 import gc
-from elysia_eye.guerrilla_capturer import GuerrillaCapturer
-from elysia_eye.wave_generator import WaveTrajectoryGenerator
+from elysia_trunk.guerrilla_capturer import GuerrillaCapturer
+from elysia_trunk.wave_generator import WaveTrajectoryGenerator
 
 class FullModelCrystallizer:
     def __init__(self, model_id="Qwen/Qwen1.5-1.8B-Chat"):
@@ -129,7 +129,7 @@ class FullModelCrystallizer:
             "layer_energies": all_layer_energies
         }
 
-        output_path = "elysia_eye/outputs/full_model_crystal.json"
+        output_path = "elysia_trunk/outputs/full_model_crystal.json"
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(crystal, f, indent=4)
@@ -140,8 +140,8 @@ class FullModelCrystallizer:
 if __name__ == "__main__":
     # Interactive Mode or CLI arguments
     import sys
-    from elysia_eye.sovereign_selector import SovereignSelector
-    from elysia_eye.journal_manager import JournalManager
+    from elysia_trunk.sovereign_selector import SovereignSelector
+    from elysia_trunk.journal_manager import JournalManager
 
     if len(sys.argv) > 1:
         model_id = sys.argv[1]

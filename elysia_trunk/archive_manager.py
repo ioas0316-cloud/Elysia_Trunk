@@ -4,7 +4,7 @@ import datetime
 import os
 
 class SovereignArchive:
-    def __init__(self, storage_path="elysia_eye/archive"):
+    def __init__(self, storage_path="elysia_trunk/archive"):
         self.storage_path = storage_path
         if not os.path.exists(storage_path):
             os.makedirs(storage_path)

@@ -2,7 +2,7 @@ import os
 import json
 import torch
 import httpx
-from elysia_eye.guerrilla_capturer import GuerrillaCapturer
+from elysia_trunk.guerrilla_capturer import GuerrillaCapturer
 
 class SovereignSelector:
     """
@@ -10,7 +10,7 @@ class SovereignSelector:
     A tool for users to browse, select, and analyze LLMs before crystallization.
     Calculates hardware difficulty and estimates output size.
     """
-    def __init__(self, models_file="elysia_eye/models.json"):
+    def __init__(self, models_file="elysia_trunk/models.json"):
         self.models_file = models_file
         self.models = self.load_models()
         self.vram_gb = self.get_vram_info()

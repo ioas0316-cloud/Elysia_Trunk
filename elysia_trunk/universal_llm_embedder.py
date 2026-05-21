@@ -6,10 +6,10 @@ import numpy as np
 # 경로 문제 방지
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from elysia_eye.full_model_crystallizer import FullModelCrystallizer
-from elysia_eye.phase_benchmark import PhaseBenchmark
+from elysia_trunk.full_model_crystallizer import FullModelCrystallizer
+from elysia_trunk.phase_benchmark import PhaseBenchmark
 
-COSMOS_DB_PATH = "elysia_eye/outputs/elysian_cosmos.json"
+COSMOS_DB_PATH = "elysia_trunk/outputs/elysian_cosmos.json"
 
 class UniversalLLMEmbedder:
     def __init__(self):
@@ -54,7 +54,7 @@ class UniversalLLMEmbedder:
         # 2. Benchmark (Validate Before vs After)
         print("\n🔭 Running 3-Phase Resonance Verification...")
         # 임시로 crystal json 경로를 강제로 덮어씌워서 벤치마크가 인식하게 함
-        benchmark = PhaseBenchmark("elysia_eye/outputs/full_model_crystal.json")
+        benchmark = PhaseBenchmark("elysia_trunk/outputs/full_model_crystal.json")
         benchmark.crystal = crystal # 주입
         
         metrics = benchmark.calculate_metrics(raw_energies)

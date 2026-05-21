@@ -60,7 +60,7 @@ def run_mini_inference():
     print("====================================================")
 
     # Try to find the pythagorean seed we generated earlier
-    seed_file = "elysia_eye/outputs/seed_Pythagorean_theorem.json"
+    seed_file = "elysia_trunk/outputs/seed_Pythagorean_theorem.json"
     if not os.path.exists(seed_file):
         print("Seed file not found. Please run refine_knowledge.py first.")
         return

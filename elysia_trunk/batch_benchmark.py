@@ -1,8 +1,8 @@
 import os
 import json
 import numpy as np
-from elysia_eye.full_model_crystallizer import FullModelCrystallizer
-from elysia_eye.phase_benchmark import PhaseBenchmark
+from elysia_trunk.full_model_crystallizer import FullModelCrystallizer
+from elysia_trunk.phase_benchmark import PhaseBenchmark
 
 def run_batch_benchmark(model_ids, rotor_counts=[27]):
     results = []
@@ -20,10 +20,10 @@ def run_batch_benchmark(model_ids, rotor_counts=[27]):
 
                 # 2. Benchmarking
                 # Use a specific output path for each model's crystal to avoid overwriting if needed,
-                # but FullModelCrystallizer currently hardcodes to elysia_eye/outputs/full_model_crystal.json
+                # but FullModelCrystallizer currently hardcodes to elysia_trunk/outputs/full_model_crystal.json
                 # Let's fix that or rename after each run.
 
-                crystal_filename = f"elysia_eye/outputs/crystal_{model_id.replace('/', '_')}_r{num_rotors}.json"
+                crystal_filename = f"elysia_trunk/outputs/crystal_{model_id.replace('/', '_')}_r{num_rotors}.json"
                 with open(crystal_filename, "w", encoding="utf-8") as f:
                     json.dump(crystal, f, indent=4)
 

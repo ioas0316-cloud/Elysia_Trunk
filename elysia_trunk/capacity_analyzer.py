@@ -7,7 +7,7 @@ class CapacityAnalyzer:
     Analyzes the 'Hardware Sovereignty' metrics:
     Original Weight Size vs Crystal Size, and Processing Efficiency.
     """
-    def __init__(self, crystal_path="elysia_eye/outputs/full_model_crystal.json"):
+    def __init__(self, crystal_path="elysia_trunk/outputs/full_model_crystal.json"):
         self.crystal_path = crystal_path
         self.load_data()
 

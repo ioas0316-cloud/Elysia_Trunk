@@ -10,7 +10,7 @@ class PhaseBenchmark:
     Measures the resonance between the Sovereign Engine and the Giant's wave patterns.
     Produces the 'Interference Pattern' visualization and core metrics.
     """
-    def __init__(self, sovereign_crystal_path="elysia_eye/outputs/full_model_crystal.json"):
+    def __init__(self, sovereign_crystal_path="elysia_trunk/outputs/full_model_crystal.json"):
         self.sovereign_crystal_path = sovereign_crystal_path
         self.load_sovereign()
 
@@ -87,7 +87,7 @@ class PhaseBenchmark:
         if self.crystal is None: return
         model_id = self.crystal["metadata"]["model_id"].replace("/", "_")
         if output_path is None:
-            output_path = f"elysia_eye/outputs/interference_{model_id}.html"
+            output_path = f"elysia_trunk/outputs/interference_{model_id}.html"
 
         sov_traj = np.array(self.crystal["pcm_trajectory"])
 
@@ -137,7 +137,7 @@ class PhaseBenchmark:
         if self.crystal is None: return
         model_id = self.crystal["metadata"]["model_id"].replace("/", "_")
         if output_path is None:
-            output_path = f"elysia_eye/outputs/rotors_{model_id}.html"
+            output_path = f"elysia_trunk/outputs/rotors_{model_id}.html"
 
         rotors = self.crystal["rotors"]
 

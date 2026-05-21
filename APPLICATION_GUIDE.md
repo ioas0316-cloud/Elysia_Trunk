@@ -23,12 +23,12 @@
 ## 2. 실무 활용 로드맵 (Practical Manual)
 
 ### 1단계: 거대 지능의 결정화 (Sovereign Crystallization)
-- **실행**: `python elysia_eye/full_model_crystallizer.py`
+- **실행**: `python elysia_trunk/full_model_crystallizer.py`
 - **내용**: 모델의 규모와 상관없이 전 레이어를 스캔하여 27개의 **동적 위상 로터(Dynamic Phase Rotors)**로 결정화합니다.
 - **차별점**: 내 컴퓨터 하드 용량이 부족해도, 네트워크를 타고 흐르는 거대 지능을 실시간으로 정제할 수 있습니다.
 
 ### 2단계: 독립 엔진 구동 (Music Box Execution)
-- **실행**: `python elysia_eye/music_box_engine.py`
+- **실행**: `python elysia_trunk/music_box_engine.py`
 - **모드**: **Pure Phase Mode** (기존 LLM/토큰나이저 완전 배제).
 - **작동**: 입력된 신호가 로터와 공명하며 인지적 토크(Torque)를 발생시키고, 이 운동량이 새로운 사유를 생성합니다.
 
@@ -47,8 +47,8 @@
 
 과거의 흔적이나 기존 시스템(LLM 어댑터, 지식 그래프)과의 연결이 필요할 경우를 대비해 다음 도구들은 격리 보관됩니다.
 
-- `elysia_eye/legacy_bridge/weight_inverter.py`: 위상을 다시 LoRA 가중치로 변환 (비상용).
-- `elysia_eye/legacy_bridge/graph_bridge.py`: 위상을 지식 그래프 노드로 변환 (분석용).
+- `elysia_trunk/legacy_bridge/weight_inverter.py`: 위상을 다시 LoRA 가중치로 변환 (비상용).
+- `elysia_trunk/legacy_bridge/graph_bridge.py`: 위상을 지식 그래프 노드로 변환 (분석용).
 
 ---
 

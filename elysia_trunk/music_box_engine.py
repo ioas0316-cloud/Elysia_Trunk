@@ -4,7 +4,7 @@ import os
 import time
 
 class MusicBoxEngine:
-    def __init__(self, crystal_path="elysia_eye/outputs/full_model_crystal.json"):
+    def __init__(self, crystal_path="elysia_trunk/outputs/full_model_crystal.json"):
         self.load_crystal(crystal_path)
         print("\n[Elysia Sovereign Engine] Initialized.")
         print("Mode: Pure Phase Generation (No External LLM/Tokenizers required).")

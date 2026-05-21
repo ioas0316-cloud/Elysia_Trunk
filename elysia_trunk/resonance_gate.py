@@ -10,7 +10,7 @@ class ResonanceGate:
     Instead of binary thresholds, it uses Phase Resonance (Coherence)
     between the input wave and a target phase rotor.
     """
-    def __init__(self, rotor_id=0, crystal_path="elysia_eye/outputs/full_model_crystal.json"):
+    def __init__(self, rotor_id=0, crystal_path="elysia_trunk/outputs/full_model_crystal.json"):
         self.load_rotor(rotor_id, crystal_path)
 
     def load_rotor(self, rotor_id, crystal_path):

@@ -11,8 +11,8 @@ def run_experiment():
     print("=== Elysia-Eye First Experiment: Pythagorean Theorem ===")
 
     # 0. Ensure directories exist
-    os.makedirs("elysia_eye/outputs", exist_ok=True)
-    os.makedirs("elysia_eye/archive", exist_ok=True)
+    os.makedirs("elysia_trunk/outputs", exist_ok=True)
+    os.makedirs("elysia_trunk/archive", exist_ok=True)
 
     # 1. Setup
     projector = XRayProjector()
@@ -50,11 +50,11 @@ def run_experiment():
     # 5. Visualization & Audio
     print("Creating Visualization and Audio...")
     fig = microscope.visualize_trajectory(trajectory, title=f"Elysia-Eye: Pythagorean Theorem (Layer {target_layer})")
-    viz_path = "elysia_eye/outputs/pythagoras_trajectory.html"
+    viz_path = "elysia_trunk/outputs/pythagoras_trajectory.html"
     fig.write_html(viz_path)
 
     audio_data = microscope.generate_resonance_audio(imbalance)
-    audio_path = "elysia_eye/outputs/pythagoras_resonance.wav"
+    audio_path = "elysia_trunk/outputs/pythagoras_resonance.wav"
     wavfile.write(audio_path, microscope.sample_rate, audio_data)
 
     # 6. Archive
