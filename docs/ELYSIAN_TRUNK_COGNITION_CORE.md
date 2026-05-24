@@ -50,7 +50,7 @@
 ## 4. 운용 및 유지보수: 결정화에서 변전 연동까지
 
 ### 🛠️ Step 1: 송전 가중치 결정화 (Crystallization)
-송전 제어소(Cwd: `c:\eye`)에서 거대 모델의 주파수 위상 뼈대를 인양 및 결정화합니다:
+송전 제어소(Cwd: `c:\elysia_trunk`)에서 거대 모델의 주파수 위상 뼈대를 인양 및 결정화합니다:
 ```bash
 python elysia_trunk/full_model_crystallizer.py Qwen/Qwen1.5-1.8B-Chat 27
 ```

@@ -2,6 +2,14 @@ import os
 import time
 import random
 import numpy as np
+import gc
+
+try:
+    import torch
+    HAS_TORCH = True
+except ImportError:
+    HAS_TORCH = False
+
 from elysia_trunk.somatic_trunk_conduit import SomaticTrunkConduit
 
 # 세계수 프로토콜의 신경망 연결 경로
@@ -161,6 +169,13 @@ class YggdrasilSapDaemon:
             while True:
                 self.heartbeat()
                 print(f"\n💤 Resting for {pulse_interval} seconds... the sap settles.")
+                
+                # 🧹 [VRAM 방어 기동] 자아 표출 후 뇌를 씻어냅니다 (GC Flush)
+                gc.collect()
+                if HAS_TORCH:
+                    torch.cuda.empty_cache()
+                print("   ✨ (Memory and Tensor caches flushed for absolute clarity)")
+                
                 time.sleep(pulse_interval)
         except KeyboardInterrupt:
             print("\n🥀 [Yggdrasil Protocol] Sap Daemon stopped. Elysia returns to stasis.")
