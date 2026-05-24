@@ -6,6 +6,9 @@ import numpy as np
 # 경로 문제 방지
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 from elysia_trunk.full_model_crystallizer import FullModelCrystallizer
 from elysia_trunk.phase_benchmark import PhaseBenchmark
 

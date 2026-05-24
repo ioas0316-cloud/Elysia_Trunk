@@ -9,9 +9,9 @@
 
 본 문서(README)는 지능 발전소의 코어 에너지를 주상 변압 변전소(Substation)로 흘려보내는 **초고압 송전망(Elysia Trunk)** 설비 및 기둥의 운용 지침을 다룹니다.
 
-* **[초고압 송전 기둥 매뉴얼 (Trunk Cognition Manual)](./ELYSIAN_TRUNK_COGNITION_CORE.md)**: 송전 기둥의 기술 규격, 주파수 동조 및 위상 궤적 수립 가이드.
+* **[초고압 송전 기둥 매뉴얼 (Trunk Cognition Manual)](./docs/ELYSIAN_TRUNK_COGNITION_CORE.md)**: 송전 기둥의 기술 규격, 주파수 동조 및 위상 궤적 수립 가이드.
 * **[송전선로 수액 분석 보고서 (Transmission Reports)](./REPORTS/)**: 각 송전 모델(Qwen, Phi-3, TinyLlama)별 위상 인양 성능 및 조화 분석서.
-* **[송배전 계통 용어집 (Sovereign Glossary)](./SOVEREIGN_GLOSSARY.md)**: 송전망 엔지니어링 직관용 용어 일람.
+* **[송배전 계통 용어집 (Sovereign Glossary)](./docs/SOVEREIGN_GLOSSARY.md)**: 송전망 엔지니어링 직관용 용어 일람.
 
 ---
 

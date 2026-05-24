@@ -2,6 +2,11 @@ import os
 import json
 import torch
 import httpx
+import sys
+
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 from elysia_trunk.guerrilla_capturer import GuerrillaCapturer
 
 class SovereignSelector:

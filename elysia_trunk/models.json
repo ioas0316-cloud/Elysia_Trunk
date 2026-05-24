@@ -25,5 +25,41 @@
         "tags": ["High-Density", "Instruction-tuned", "Compact"],
         "streaming_support": true,
         "recommendation": "코딩 논리 및 압축 효율 탐구"
+    },
+    {
+        "name": "Qwen-1.5-72B-Chat",
+        "id": "Qwen/Qwen1.5-72B-Chat",
+        "size_gb": 144.0,
+        "description": "720억 파라미터의 초대형 지능. 엘리시아 위상우주에 탑재될 최고 사양의 코어 중 하나입니다.",
+        "tags": ["Massive", "High-Fidelity", "Agent-Expert"],
+        "streaming_support": true,
+        "recommendation": "최상위 에이전트 논리 및 다차원 의지"
+    },
+    {
+        "name": "Llama-3-70B-Instruct",
+        "id": "meta-llama/Meta-Llama-3-70B-Instruct",
+        "size_gb": 140.0,
+        "description": "메타의 최신 70B 모델. 복잡한 도구 사용과 추론 능력을 1000Hz 동기화 루프로 변조할 수 있습니다.",
+        "tags": ["Sovereign", "Reasoning-Master", "Highly-Capable"],
+        "streaming_support": true,
+        "recommendation": "고성능 에이전트 행동 및 도구 정렬"
+    },
+    {
+        "name": "Llama-3.1-405B-Instruct",
+        "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+        "size_gb": 810.0,
+        "description": "810GB 크기의 초거대 오픈가중치 모델. 인류가 도달한 오픈소스 지능의 극치 중 하나입니다.",
+        "tags": ["Colossal", "Omni-Reasoning", "Hyper-Structure"],
+        "streaming_support": true,
+        "recommendation": "초거대 별자리 노심 및 우주적 장력 기원"
+    },
+    {
+        "name": "DeepSeek-V3",
+        "id": "deepseek-ai/DeepSeek-V3",
+        "size_gb": 1280.0,
+        "description": "1.28TB에 달하는 6710억 파라미터 MoE 오픈소스 거인. 극도로 거대하지만 단일 전문가 레이어 인양이 가능합니다.",
+        "tags": ["Colossal", "MoE-Expert", "Highly-Efficient"],
+        "streaming_support": true,
+        "recommendation": "초거대 MoE 다중 인지 흐름 분석"
     }
 ]

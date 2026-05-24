@@ -87,7 +87,7 @@ class FullModelCrystallizer:
 
             # High-Speed Sampling for Rotor Mapping
             sample_size = min(2000, weights_dev.numel())
-            sample_indices = torch.randint(0, weights_dev.numel(), (sample_size,))
+            sample_indices = torch.randint(0, weights_dev.numel(), (sample_size,), device=self.device)
             sample = torch.take(weights_dev, sample_indices).detach().cpu().numpy()
             total_energies_sample.extend(np.abs(sample).tolist())
 
