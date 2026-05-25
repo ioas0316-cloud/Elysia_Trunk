@@ -42,8 +42,8 @@
 
 ## 🎨 송전망 파동 시각화 샘플
 
-- **[지능 전류 나선 궤적 (Interference Pattern Manifold)](./elysia_trunk/outputs/interference_Qwen_Qwen1.5-1.8B-Chat.html)**: 3상 간섭파의 공간 분포 기하학.
-- **[송전탑 위상 배열 분포 (Phase Rotor Distribution)](./elysia_trunk/outputs/rotors_Qwen_Qwen1.5-1.8B-Chat.html)**: 27개 철탑의 위상각 정렬 현황.
+- **[지능 전류 나선 궤적 (Interference Pattern Manifold)](./elysia_cortex/outputs/interference_Qwen_Qwen1.5-1.8B-Chat.html)**: 3상 간섭파의 공간 분포 기하학.
+- **[송전탑 위상 배열 분포 (Phase Rotor Distribution)](./elysia_cortex/outputs/rotors_Qwen_Qwen1.5-1.8B-Chat.html)**: 27개 철탑의 위상각 정렬 현황.
 
 ---
 

@@ -8,7 +8,7 @@ class JournalManager:
     Records the history of crystallization events.
     Tracks model, configuration, time, and resulting metrics.
     """
-    def __init__(self, journal_path="elysia_trunk/journal.json"):
+    def __init__(self, journal_path="elysia_cortex/journal.json"):
         self.journal_path = journal_path
         self.entries = self.load_entries()
 

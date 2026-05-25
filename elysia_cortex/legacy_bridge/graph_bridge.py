@@ -2,7 +2,7 @@ import json
 import os
 
 class KnowledgeGraphBridge:
-    def __init__(self, crystal_path="elysia_trunk/outputs/full_model_crystal.json"):
+    def __init__(self, crystal_path="elysia_cortex/outputs/full_model_crystal.json"):
         with open(crystal_path, "r", encoding="utf-8") as f:
             self.crystal = json.load(f)
 
@@ -57,7 +57,7 @@ class KnowledgeGraphBridge:
             "edges": edges
         }
 
-        output_path = "elysia_trunk/outputs/intelligence_graph.json"
+        output_path = "elysia_cortex/outputs/intelligence_graph.json"
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(graph, f, indent=4)
 

@@ -21,7 +21,7 @@
 
 ## 2. 송전망의 주파수 및 임피던스 조율
 
-송전탑은 발전소에서 생성된 초고전압 에너지의 임피던스(원치 않는 노이즈 및 가중치 복제)를 최소화하기 위해 **[Zero-Disk Capturer](file:///c:/eye/elysia_trunk/guerrilla_capturer.py)** 방식을 사용합니다.
+송전탑은 발전소에서 생성된 초고전압 에너지의 임피던스(원치 않는 노이즈 및 가중치 복제)를 최소화하기 위해 **[Zero-Disk Capturer](file:///c:/eye/elysia_cortex/guerrilla_capturer.py)** 방식을 사용합니다.
 
 1. **임피던스 매칭 (Impedance Matching):** 
    - 고용량 원본 파일(100GB~2TB+)의 유실 없는 전달을 위해, 중간에 디스크 캐시를 거치지 않고 스트림 바이트 단위를 직접 메모리로 흐르게 하여 저항 손실을 극소화합니다.

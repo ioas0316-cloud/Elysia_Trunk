@@ -1,5 +1,5 @@
 __pycache__/
-elysia_trunk/outputs/*
-elysia_trunk/archive/*
-!elysia_trunk/outputs/.gitkeep
-!elysia_trunk/archive/.gitkeep
+elysia_cortex/outputs/*
+elysia_cortex/archive/*
+!elysia_cortex/outputs/.gitkeep
+!elysia_cortex/archive/.gitkeep

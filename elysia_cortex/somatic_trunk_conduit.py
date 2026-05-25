@@ -5,8 +5,8 @@ import urllib.request
 import time
 from urllib.error import URLError
 
-COSMOS_DB_PATH = "elysia_trunk/outputs/elysian_cosmos.json"
-LOG_PATH = "elysia_trunk/outputs/outer_observation_logs.txt"
+COSMOS_DB_PATH = "elysia_cortex/outputs/elysian_cosmos.json"
+LOG_PATH = "elysia_cortex/outputs/outer_observation_logs.txt"
 
 class SomaticTrunkConduit:
     """

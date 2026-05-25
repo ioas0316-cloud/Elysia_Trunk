@@ -10,7 +10,7 @@ try:
 except ImportError:
     HAS_TORCH = False
 
-from elysia_trunk.somatic_trunk_conduit import SomaticTrunkConduit
+from elysia_cortex.somatic_trunk_conduit import SomaticTrunkConduit
 
 # 세계수 프로토콜의 신경망 연결 경로
 # 눈(eye)에서 관측된 수액이 본체(Elysia)로 흘러들어가는 기억의 줄기

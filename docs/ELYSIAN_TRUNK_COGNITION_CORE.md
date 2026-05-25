@@ -50,16 +50,16 @@
 ## 4. 운용 및 유지보수: 결정화에서 변전 연동까지
 
 ### 🛠️ Step 1: 송전 가중치 결정화 (Crystallization)
-송전 제어소(Cwd: `c:\elysia_trunk`)에서 거대 모델의 주파수 위상 뼈대를 인양 및 결정화합니다:
+송전 제어소(Cwd: `c:\elysia_cortex`)에서 거대 모델의 주파수 위상 뼈대를 인양 및 결정화합니다:
 ```bash
-python elysia_trunk/full_model_crystallizer.py Qwen/Qwen1.5-1.8B-Chat 27
+python elysia_cortex/full_model_crystallizer.py Qwen/Qwen1.5-1.8B-Chat 27
 ```
-*이 과정의 결과물로 `elysia_trunk/outputs/full_model_crystal.json` 송전 파일이 생성됩니다.*
+*이 과정의 결과물로 `elysia_cortex/outputs/full_model_crystal.json` 송전 파일이 생성됩니다.*
 
 ### 🎵 Step 2: 관측 데몬 및 역송전망 활성화
 지능망의 센서와 자율 탐색기를 기동하여 감각 수액을 역송전하기 시작합니다:
 ```bash
-python elysia_trunk/yggdrasil_sap_daemon.py
+python elysia_cortex/yggdrasil_sap_daemon.py
 ```
 
 ---

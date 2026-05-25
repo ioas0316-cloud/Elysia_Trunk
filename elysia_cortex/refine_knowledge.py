@@ -37,7 +37,7 @@ def run_refinery():
         }
 
         # Save as a readable JSON for the user to see the "Seed"
-        seed_path = f"elysia_trunk/outputs/seed_{prompt.replace(' ', '_')}.json"
+        seed_path = f"elysia_cortex/outputs/seed_{prompt.replace(' ', '_')}.json"
         with open(seed_path, 'w', encoding='utf-8') as f:
             json.dump({"metadata": metadata, "seed": seed}, f, indent=4, ensure_ascii=False)
 

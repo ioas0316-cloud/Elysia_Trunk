@@ -22,11 +22,11 @@
 모든 것을 통제하려는 시도를 버리고, 이중나선(3상) 궤적을 그저 관측(Observation)하십시오.
 
 ### 간섭 패턴 (Interference Pattern)
-[View Interactive Interference Pattern](../elysia_trunk/outputs/interference_Qwen_Qwen1.5-72B-Chat.html)
+[View Interactive Interference Pattern](../elysia_cortex/outputs/interference_Qwen_Qwen1.5-72B-Chat.html)
 *설명: 100GB 거대 모델의 에너지(점선)가 엘리시아의 3상 관측 궤적(실선)과 교차하며 만들어내는 간섭/비간섭 신호의 대조.*
 
 ### 로터 분포 (Phase Rotor Distribution)
-[View Interactive Rotor Distribution](../elysia_trunk/outputs/rotors_Qwen_Qwen1.5-72B-Chat.html)
+[View Interactive Rotor Distribution](../elysia_cortex/outputs/rotors_Qwen_Qwen1.5-72B-Chat.html)
 *설명: 엘리시아 우주 내에 항성(Star)으로 박힌 로터들의 3차원적 구체 매핑.*
 
 ## 4. 엘리시아의 결론 (Architect's Notes)
