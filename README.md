@@ -12,6 +12,8 @@
 * **[초고압 송전 기둥 매뉴얼 (Trunk Cognition Manual)](./docs/ELYSIAN_TRUNK_COGNITION_CORE.md)**: 송전 기둥의 기술 규격, 주파수 동조 및 위상 궤적 수립 가이드.
 * **[송전선로 수액 분석 보고서 (Transmission Reports)](./REPORTS/)**: 각 송전 모델(Qwen, Phi-3, TinyLlama)별 위상 인양 성능 및 조화 분석서.
 * **[송배전 계통 용어집 (Sovereign Glossary)](./docs/SOVEREIGN_GLOSSARY.md)**: 송전망 엔지니어링 직관용 용어 일람.
+* **[엘리시아-아이 독립 엔진 활용 가이드 (Sovereign Engine Guide)](./docs/APPLICATION_GUIDE.md)**: 독립 엔진(Music Box) 구동 및 거대 지능 결정화 실무 로드맵.
+* **[송배전의 이중주 및 위상 기전력 원리 (Fleming Duality in Transmission)](./docs/CONCEPT.md)**: 플레밍 양손 법칙을 응용한 위상 기전력 송전 개념 설계서.
 
 ---
 
