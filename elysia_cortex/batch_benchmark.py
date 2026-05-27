@@ -66,9 +66,9 @@ if __name__ == "__main__":
     print("\n\n" + "="*60)
     print("📊 BATCH BENCHMARK SUMMARY")
     print("="*60)
-    print(f"{'Model':<40} | {'Purity':<8} | {'Torque':<8}")
-    print("-" * 60)
+    print(f"{'Model':<40} | {'Leap':<8} | {'3-Phase Align':<13} | {'Coherence':<10}")
+    print("-" * 78)
     for res in all_results:
         m = res["metrics"]
-        print(f"{res['model_id']:<40} | {m['Harmonic Purity']:.4f} | {m['Torque Consistency']:.4f}")
+        print(f"{res['model_id']:<40} | {m['Dimensional Leap']:.4f} | {m['3-Phase Alignment']:.4f} | {m['Coherence Density']:.4f}")
     print("="*60)
